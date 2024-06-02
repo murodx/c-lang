@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Типы функции 1
 // определяется тип message
 typedef void(message)(void);
 
