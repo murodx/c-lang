@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void) {
 // Pointers to constants || Указатели на константы
   // const int a = 10;
