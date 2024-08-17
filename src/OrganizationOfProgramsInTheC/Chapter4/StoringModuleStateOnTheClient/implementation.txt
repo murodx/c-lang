@@ -1,0 +1,39 @@
+/* API модуля (заголовочный файл) */
+// структура, которая представляет состояние
+struct INSTANCE
+{
+  int x;
+  int y;
+};
+ 
+// создание состояния
+struct INSTANCE* createInstance();
+ 
+// некоторые действия над состоянием
+void operateOnInstance(struct INSTANCE* inst);
+// удаление состояния
+void destroyInstance(struct INSTANCE* inst);
+ 
+/* Реализация в модуле */
+struct INSTANCE* createInstance()
+{
+  struct INSTANCE* inst;
+  inst = malloc(sizeof(struct INSTANCE));
+  return inst;
+}
+ 
+void operateOnInstance(struct INSTANCE* inst)
+{
+  // некоторая работа с состоянием
+}
+ 
+void destroyInstance(struct INSTANCE* inst)
+{
+  free(inst);
+}
+ 
+/* код клиента */
+struct INSTANCE* inst;
+inst = createInstance();    // создаем состояние
+operateOnInstance(inst);    // работаем с состоянием
+destroyInstance(inst);      // работу закончили - удаляем состояние

@@ -1,0 +1,1 @@
+void getDirectoryName(char* dirname);

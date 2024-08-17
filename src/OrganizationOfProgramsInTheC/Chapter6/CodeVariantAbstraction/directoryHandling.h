@@ -1,0 +1,1 @@
+void createNewDirectory(char* dirname);
